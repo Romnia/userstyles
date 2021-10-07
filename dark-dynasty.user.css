@@ -1,35 +1,68 @@
 /* ==UserStyle==
-@name         dark-dynasty
-@preprocessor default
-@version 1
-@namespace https://github.com/Romnia/userstyles/blob/main/dark-dynasty.user.css
-@license GNU
+@name           dynasty-scans.com
+@namespace      userstyles.world
+@version        1.0.0
 ==/UserStyle== */
-
-@-moz-document domain('dynasty-scans.com')
-{
-  #reader.noresize img
-  {
-    max-width: 100%!important;
+@-moz-document domain("dynasty-scans.com") {
+  #reader.noresize img {
+      max-width: 100%!important;
   }
-
-  #reader
-  {
-    padding: 0px;
+  
+  #reader {
+      padding: 0px;
   }
-
-  body
-  {
-    background: #333;
+  
+  body {
+      background: #000;
+      color: #fff;
   }
-
-  #reader .pages-list a
-  {
-    color: #999;
+  
+  #reader .pages-list a {
+      color: #999;
   }
-
-  #content.container
-  {
-    box-shadow: 0 0 0;
+  
+  #content.container {
+      box-shadow: 0 0 0;
+      background: none;
   }
-}
+  
+  #main.chapters .chapter .title {
+      color: #e3e3e3;
+  }
+  
+  #main.chapters .chapter {
+      color: #c6c6c6;
+  }
+  
+  a.thumbnail:hover,
+  a.thumbnail:focus {
+      border-color: #6a6a6a;
+  }
+  
+  .thumbnail .caption {
+      color: #e3e3e3;
+  }
+  
+  #main .nav a {
+      color: #0060bf;
+      text-shadow: 0 0 0;
+  }
+  
+  a {
+      color: #0060bf;
+  }
+  
+  
+  a:hover,
+  a:focus {
+      color: #1c51b3
+  }
+  #main.chapters.show {
+      border: 0.05em solid #464646;
+      padding: 1em 20em 1em 1em;
+  }
+  
+  #main.chapters.show #chapter-actions {
+      padding: 1em 1em 0 0;
+  }
+  }
