@@ -1,0 +1,31 @@
+/* ==UserStyle==
+@name         dark-dynasty
+==/UserStyle== */
+
+@-moz-document domain('dynasty-scans.com')
+{
+  #reader.noresize img
+  {
+    max-width: 100%!important;
+  }
+
+  #reader
+  {
+    padding: 0px;
+  }
+
+  body
+  {
+    background: #333;
+  }
+
+  #reader .pages-list a
+  {
+    color: #999;
+  }
+
+  #content.container
+  {
+    box-shadow: 0 0 0;
+  }
+}
