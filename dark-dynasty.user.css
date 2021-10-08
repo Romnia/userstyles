@@ -1,68 +1,189 @@
 /* ==UserStyle==
-@name           dynasty-scans.com
-@namespace      userstyles.world
-@version        1.0.0
+@name           dark-dynasty
+@author         Romnia
+@namespace      https://github.com/Romnia/userstyles
+@version        0.1.0
+@license        GPL-3.0 License 
+@updateURL      https://github.com/Romnia/userstyles/raw/main/dark-dynasty.user.css
 ==/UserStyle== */
 @-moz-document domain("dynasty-scans.com") {
-  #reader.noresize img {
+    #reader.noresize img {
       max-width: 100%!important;
   }
-  
+
   #reader {
-      padding: 0px;
+      padding: 0.09em;
   }
-  
+
+  #reader #image {
+      background-color:#2b2b2b;
+      border:none;
+  }
+
   body {
       background: #000;
-      color: #fff;
+      color: #eee;
   }
-  
+
   #reader .pages-list a {
       color: #999;
   }
-  
+
   #content.container {
       box-shadow: 0 0 0;
       background: none;
   }
-  
+
   #main.chapters .chapter .title {
-      color: #e3e3e3;
+      color: #eee;
   }
-  
+  #main.chapters .chapter .title small {
+      color: #8a8a8a;
+  }
+
   #main.chapters .chapter {
       color: #c6c6c6;
   }
-  
+
+  i {
+      filter: brightness(4.3);
+  }
+
   a.thumbnail:hover,
-  a.thumbnail:focus {
-      border-color: #6a6a6a;
+  a.thumbnail:focus {             
+      border-color: #d0daff;
+      background: #333;
   }
-  
+
+  .btn{
+      background: none;
+      color: #eee;
+      text-shadow: none;
+  }
+
+  .popover.bottom .arrow::after {
+      border-bottom-color: #202020;
+  }
+
+  .btn:hover, .btn:focus {
+      background: #4d4d4d;
+      color: #eee;
+  }
+
+  .btn.active, .btn:active {
+      background: #626262;
+      color: #eee;
+  }
+
+  .popover {
+      background: #202020;
+  }
+
+  select {
+      background-color: #333;
+      border: none;
+      color: #eee;
+  }
+
+  #main.chapters.show #next_select
+  {
+      margin-top: 0.4em;
+  }
+
+  .label {
+      background-color: #5b5b5b;
+  }
+
   .thumbnail .caption {
-      color: #e3e3e3;
+      color: #eee;
   }
-  
+
   #main .nav a {
       color: #0060bf;
       text-shadow: 0 0 0;
+      text-decoration: none;
   }
-  
+
   a {
-      color: #0060bf;
+      color: #298bec;
   }
-  
-  
+
   a:hover,
   a:focus {
-      color: #1c51b3
+      color: #94c1ec;
   }
+
+  #main .pagination a {
+      text-decoration: none;
+  }
+
+  #main .pagination a:hover, #main .pagination a:focus{
+      text-decoration: underline;
+  }
+
+  #main .pagination .active a {
+      text-decoration: none;
+      background: none;
+      border: none;
+  }
+
+  #main .posts::after {
+      background: #555;
+  }
+
+  #main .posts .forum_post .info {
+      background: none;
+      border-top: 1px solid #626262;
+      border-bottom: 1px dashed #424242
+  }
+
+  .pagination ul > li > a:hover, .pagination ul > li > a:focus {
+      text-decoration: underline;
+  }
+
+  .pagination ul > li > a:hover, .pagination ul > li > a:focus, .pagination ul > .active > a, .pagination ul > .active > span, .pagination ul > li > a, .pagination ul > li > span {
+      background: none;
+      border: none;
+  }
+
+  #new_forum_post .btn.btn-primary {
+      box-shadow: none;
+      border: 0.001em solid #fff;
+  }
+
+  #new_forum_post .btn {
+      box-shadow: none;
+      border: 0.001em dotted #fff;
+  }
+
+  .form-actions {
+      background: none;
+      border: none;
+  }
+
+  .form-actions .btn {
+      box-shadow: none;
+      border: 0.001em solid #fff;
+  }
+
   #main.chapters.show {
       border: 0.05em solid #464646;
       padding: 1em 20em 1em 1em;
   }
-  
+
   #main.chapters.show #chapter-actions {
       padding: 1em 1em 0 0;
   }
+
+  @media only screen and (max-width: 768px) {
+      #main.chapters.show {
+          padding: 1em 1em 1em 1em;
+      }
+      #main.chapters.show #chapter-actions {
+          padding: 0 0 0 0;
+      }
+      #reader {
+          padding-bottom: 10em;
+      }
   }
+}
