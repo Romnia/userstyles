@@ -2,7 +2,7 @@
 @name           dark-dynasty
 @author         Romnia
 @namespace      https://github.com/Romnia/userstyles
-@version        1.0.0
+@version        1.0.1
 @license        GPL-3.0 License 
 @updateURL      https://github.com/Romnia/userstyles/raw/main/dark-dynasty.user.css
 ==/UserStyle== */
@@ -106,17 +106,18 @@
         text-shadow: none;
     }
 
+    .btn.active,
+    .btn:active {
+        background: #3c3b3b;
+        color: #eee;
+    }
+
     .btn:hover,
     .btn:focus {
         background: #4d4d4d;
         color: #eee;
     }
 
-    .btn.active,
-    .btn:active {
-        background: #626262;
-        color: #eee;
-    }
 
     .popover {
         background: #202020;
@@ -134,6 +135,17 @@
 
     .label {
         background-color: #5b5b5b;
+    }
+
+
+    .label-important,
+    .badge-important {
+        background-color: #b94a48;
+    }
+
+    .label-info,
+    .badge-info {
+        background-color: #036;
     }
 
     .thumbnail .caption {
@@ -164,6 +176,16 @@
         border: none;
     }
 
+    /* Forum Stuff */
+
+    .toolbar {
+        background: none;
+    }
+
+    #main.topics.index .forum_topic:nth-child(2n+1) {
+        background: none;
+    }
+
     #new_forum_post .btn.btn-primary {
         box-shadow: none;
         border: 0.001em solid #fff;
@@ -183,6 +205,71 @@
         box-shadow: none;
         border: 0.001em solid #fff;
     }
+
+    blockquote p {
+        color: #888;
+        border-left-color: #888;
+    }
+
+    .toolbar .btn-group.open .btn.dropdown-toggle {
+        background-color: #333;
+        box-shadow: none;
+    }
+
+    .toolbar .dropdown-menu,
+    .toolbar .dropdown-menu>li>a {
+        background-color: #333;
+        border: none;
+        color: #eee;
+    }
+
+    .toolbar .dropdown-menu>li>a:hover,
+    .toolbar .dropdown-menu>li>a:focus,
+    .toolbar .dropdown-submenu:hover>a,
+    .toolbar .dropdown-submenu:focus>a {
+        background: #575757;
+        border: none;
+        color: #eee;
+    }
+
+    #main.topics.index .forum_topic .info>span {
+        background: none;
+        color: #ddd;
+        text-shadow: none;
+    }
+
+    .caret {
+        border-top-color: #eee;
+    }
+
+    /* User lists */
+    .table-striped tbody>tr:nth-child(2n+1)>td,
+    .table-striped tbody>tr:nth-child(2n+1)>th {
+        background: none;
+    }
+
+    .table.table-striped.table-links tbody tr {
+        border-top: 1px solid #fff;
+        padding-top: 5px;
+        padding-bottom: 2px;
+    }
+
+    .table td {
+        border-top: none;
+    }
+
+    table.table-links tbody tr:hover td {
+        background: #333;
+    }
+
+    .btn-info {
+        background: none;
+        color: #eee;
+        text-shadow: none;
+        box-shadow: none;
+        border: 0.001em solid #fff;
+    }
+
 
     @media only screen and (max-width: 768px) {
         #main.chapters.show {
